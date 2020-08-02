@@ -11,25 +11,25 @@
 
     <!--Charts-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
-      <card title="Jahresübersicht">
+      <card [title]="'Jahresübersicht'">
         <annual-sales-chart></annual-sales-chart>
       </card>
     </mat-grid-tile>
 
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
-      <card title="Produkte">
+      <card [title]="'Produkte'">
         <product-sales-chart></product-sales-chart>
       </card>
     </mat-grid-tile>
 
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
-      <card title="Verkauf nach Traffic ">
+      <card [title]="'Verkauf nach Traffic'">
         <sales-traffic-chart></sales-traffic-chart>
       </card>
     </mat-grid-tile>
 
     <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
-      <card title="Sessions">
+      <card [title]="'Sessions'">
         <store-sessions-chart></store-sessions-chart>
       </card>
     </mat-grid-tile>
