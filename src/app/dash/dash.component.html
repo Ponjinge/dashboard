@@ -10,10 +10,27 @@
     </mat-grid-tile>
 
     <!--Charts-->
-    <mat-grid-tile *ngFor="let i of [5, 6, 7, 8]" [colspan]="( cardLayout | async )?.chart.cols"
-      [rowspan]="( cardLayout | async )?.chart.rows">
-      <card title="Card {{i}}">
-        <div>Chart Content Here</div>
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <card title="Jahresübersicht">
+        <annual-sales-chart></annual-sales-chart>
+      </card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <card title="Produkte">
+        <annual-sales-chart></annual-sales-chart>
+      </card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <card title="Verkauf nach Traffic ">
+        <sales-traffic-chart></sales-traffic-chart>
+      </card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="( cardLayout | async )?.chart.cols" [rowspan]="( cardLayout | async )?.chart.rows">
+      <card title="Sessions">
+        <store-sessions-chart></store-sessions-chart>
       </card>
     </mat-grid-tile>
 

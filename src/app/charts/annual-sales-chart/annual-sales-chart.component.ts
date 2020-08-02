@@ -3,7 +3,7 @@ import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-annual-sales-chart',
+  selector: 'annual-sales-chart',
   templateUrl: './annual-sales-chart.component.html',
   styleUrls: ['./annual-sales-chart.component.scss']
 })
@@ -28,7 +28,6 @@ export class AnnualSalesChartComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit(): void { }
 
 }

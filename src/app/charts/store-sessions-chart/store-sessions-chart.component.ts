@@ -3,7 +3,7 @@ import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-store-sessions-chart',
+  selector: 'store-sessions-chart',
   templateUrl: './store-sessions-chart.component.html',
   styleUrls: ['./store-sessions-chart.component.scss']
 })
@@ -12,7 +12,8 @@ export class StoreSessionsChartComponent implements OnInit {
   public barChartOptions: ChartOptions = {
     responsive: true,
   };
-  public barChartLabels: Label[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+
+  public barChartLabels: Label[] = ['2013', '2014', '2015', '2016', '2017', '2018', '2019'];
   public barChartType: ChartType = 'bar';
   public barChartLegend = true;
   public barChartPlugins = [];
@@ -24,7 +25,6 @@ export class StoreSessionsChartComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit(): void { }
 
 }

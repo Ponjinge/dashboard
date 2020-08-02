@@ -3,7 +3,7 @@ import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-product-sales-chart',
+  selector: 'product-sales-chart',
   templateUrl: './product-sales-chart.component.html',
   styleUrls: ['./product-sales-chart.component.scss']
 })

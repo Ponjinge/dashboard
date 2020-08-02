@@ -3,7 +3,7 @@ import { ChartOptions, ChartType } from 'chart.js';
 import { Label, SingleDataSet } from 'ng2-charts';
 
 @Component({
-  selector: 'app-sales-traffic-chart',
+  selector: 'sales-traffic-chart',
   templateUrl: './sales-traffic-chart.component.html',
   styleUrls: ['./sales-traffic-chart.component.scss']
 })
@@ -20,7 +20,7 @@ export class SalesTrafficChartComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }
