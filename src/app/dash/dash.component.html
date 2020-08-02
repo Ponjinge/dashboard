@@ -2,7 +2,7 @@
   <h1 class="mat-h1">Dashboard</h1>
   <mat-grid-list cols="{{(cardLayout | async)?.columns }}" rowHeight="200px">
 
-    <mat-grid-tile *ngFor="let i of [1,2,3,4] | async" [colspan]="( cardLayout | async )?.miniCard.cols"
+    <mat-grid-tile *ngFor="let i of [1,2,3,4]" [colspan]="( cardLayout | async )?.miniCard.cols"
       [rowspan]="( cardLayout | async )?.miniCard.rows">
       <card title="Card {{i}}">
         <div>Mini Card Content Here</div>
