@@ -36,8 +36,8 @@
 
     <!--Table-->
     <mat-grid-tile [colspan]="( cardLayout | async )?.table.cols" [rowspan]="( cardLayout | async )?.table.rows">
-      <card title="Card 9">
-        <div>Table Content Here</div>
+      <card [title]="'Letzten Bestellungen'">
+        <orders-table></orders-table>
       </card>
     </mat-grid-tile>
   </mat-grid-list>
