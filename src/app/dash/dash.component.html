@@ -1,9 +1,26 @@
 <div class="grid-container">
   <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <card [title]="card.title">
+  <mat-grid-list cols="{{(cardLayout | async)?.columns }}" rowHeight="200px">
 
+    <mat-grid-tile *ngFor="let i of [1,2,3,4] | async" [colspan]="( cardLayout | async )?.miniCard.cols"
+      [rowspan]="( cardLayout | async )?.miniCard.rows">
+      <card title="Card {{i}}">
+        <div>Mini Card Content Here</div>
+      </card>
+    </mat-grid-tile>
+
+    <!--Charts-->
+    <mat-grid-tile *ngFor="let i of [5, 6, 7, 8]" [colspan]="( cardLayout | async )?.chart.cols"
+      [rowspan]="( cardLayout | async )?.chart.rows">
+      <card title="Card {{i}}">
+        <div>Chart Content Here</div>
+      </card>
+    </mat-grid-tile>
+
+    <!--Table-->
+    <mat-grid-tile [colspan]="( cardLayout | async )?.table.cols" [rowspan]="( cardLayout | async )?.table.rows">
+      <card title="Card 9">
+        <div>Table Content Here</div>
       </card>
     </mat-grid-tile>
   </mat-grid-list>
