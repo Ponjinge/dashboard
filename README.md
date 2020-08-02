@@ -1,6 +1,6 @@
 # Dashboard
 
-Ein Eintrag für den Koala.
+Ein Eintrag für den Koala, der kein Bock auf Git hat.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
