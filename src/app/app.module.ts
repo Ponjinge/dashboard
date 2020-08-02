@@ -17,6 +17,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { DashComponent } from './dash/dash.component';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -24,7 +25,8 @@ import { DashComponent } from './dash/dash.component';
   declarations: [
     AppComponent,
     NavComponent,
-    DashComponent
+    DashComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
